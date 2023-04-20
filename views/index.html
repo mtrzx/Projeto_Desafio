@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        body{
+            background-color: #353641;
+        }
+
+        .container{
+            display: flex;
+            width: 100%;
+            margin-top: 1%;
+        }
+
+        #content{
+            width: 50%;
+            display: flex;
+            justify-content: end;
+        }
+
+        #names{
+            background-color: #0d1117;
+            color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 0.3%;
+            border-radius: 30px;
+        }
+
+        li:hover{
+            color: azure;
+            transition: all 1s;
+        }
+
+        li{
+            border-radius: 5px;
+            width: 100%;
+            transition: all 1s;
+            transition-delay: 0.5s;
+        }
+
+        #list{
+            width: 20%;
+            border: solid 1px #0d1117;
+        }
+
+        ul{
+            width: 100%;
+        }
+
+        p{
+            color: aliceblue;
+        }
+
+        a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        #about{
+            width: 60%;
+            padding: 1%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .card{
+            border-radius: 30px;
+            margin: 2%;
+        }
+
+        #cardMtr{
+            width: 250px;  
+            border-radius: 30px;
+        }
+
+    
+        #cardSamu{
+            height: fit-content;
+            width: 250px;
+            border-radius: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="names"><h1>Matheus Ribeiro dos Santos 29682860 | Samuel Marques de Oliveira 30074819</h1></div>
+    <div class="container">
+        <div id="about">
+            <div id="parag1">
+                <p>- O sistema de back-end deve direcionar a abertura dos arquivos via navegador através dos caminhos (rotas)
+                    de serviço:
+                </p>
+                <div id="list">
+                    <ul>
+                        <li><a href="http://http://localhost:3000/abertura/tipoDocx">Arquivo tipo Docx</a></li>
+                        <li><a href="http://http://localhost:3000/abertura/tipoJpeg">Arquivo tipo Jpeg</a></li>
+                        <li><a href="http://http://localhost:3000/abertura/tipoMp3">Arquivo tipo Mp3</a></li>
+                        <li><a href="http://http://localhost:3000/abertura/tipoMp4">Arquivo tipo Mp4</a></li>
+                        <li><a href="http://http://localhost:3000/abertura/tipoJson">Arquivo tipo Json</a></li>
+                        <li><a href="http://http://localhost:3000/abertura/tipoMd">Arquivo tipo Md</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div id="parag2">
+                <p>- Conforme o usuário entrar nos caminhos GET via URL (descritos abaixo) o sistema deve abrir os seguintes sites</p>
+                <div id="list">
+                    <ul>
+                        <li><a href="http://localhost:3000/">Index</a></li>
+                        <li><a href="http://localhost:3000/contatos">Contato</a></li>
+                        <li><a href="http://localhost:3000/produtos">Produto</a></li>
+                        <li><a href="http://localhost:3000/catalogos">Catalogo</a></li>
+                    </ul>
+                </div>
+            
+            </div>
+            <div id="texto">
+                <p> 
+                    Este trabalho tem como objetivo apresentar as habilidades aprendidas nas aulas anteriores, incluindo o uso do método get em JavaScript, que é usado para acessar valores em objetos por meio de suas chaves. Além disso, também será abordada a criação de servidores web utilizando o Node.js, uma plataforma que permite a execução de código JavaScript do lado do servidor, em conjunto com o framework Express, que simplifica a criação de rotas e manipulação de requisições HTTP.<br>
+    
+                    Durante as aulas anteriores, foi abordado como usar o método get para acessar valores em objetos e como trabalhar com objetos JSON em JavaScript. Agora, vamos aplicar essa habilidade para criar rotas e manipular requisições HTTP em um servidor web.<br>
+                        
+                    Para criar um servidor web, usaremos o Node.js, uma plataforma que permite a execução de código JavaScript do lado do servidor. O Express é um framework para Node.js que simplifica a criação de rotas e manipulação de requisições HTTP, tornando a criação de servidores web mais fácil e rápida.<br>
+                        
+                    Ao aprender a usar essas ferramentas, você será capaz de criar servidores web dinâmicos e interativos que podem responder a solicitações HTTP e fornecer informações aos usuários em tempo real. Essas habilidades são essenciais para qualquer desenvolvedor web e podem ser usadas em uma ampla variedade de projetos e aplicações.
+                </p>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="PropilePic">
+                <div class="card" >
+                    <a href="https://github.com/mtrzx"><img  id="cardMtr" src="https://i.imgur.com/CiOzbtJ.png" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/mtrzx"><img id="cardSamu" src="https://i.imgur.com/aWg3wYM.png" alt=""></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

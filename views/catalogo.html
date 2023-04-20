@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    
+</head>
+<body>
+    <div id="titulo">
+        <h1>Catálogo de serviço de streaming</h1></div>
+    <div class="container">
+        <div class="flexCard">
+            <div class="card">
+                <a href="https://www.apple.com/br/apple-tv-plus/">
+                    <img src="https://i.imgur.com/yu8sUMW.png" alt="" srcset="">
+                </a>
+                
+            </div>
+            <div class="card">
+                <a href="https://www.disneyplus.com/pt-br?cid=DSS-Search-Google-71700000075038504-&s_kwcid=AL!8468!3!652581967632!e!!g!!disneyplus&gad=1&gclid=CjwKCAjwov6hBhBsEiwAvrvN6JrDEBRtrjTFxy442mEmQZdIZZjNbXTJa_NjBSRmBZDJSsP885MYgBoCoAEQAvD_BwE&gclsrc=aw.ds">
+                    <img src="https://i.imgur.com/nxX91Md.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.hbomax.com/br/pt">
+                    <img src="https://i.imgur.com/b2dklfb.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.netflix.com/br/">
+                    <img src="https://i.imgur.com/reb3EnU.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.paramountplus.com/br/?ftag=IPP-02-10aab2c&gclid=CjwKCAjwov6hBhBsEiwAvrvN6NwE9rSIZUp6L2T1HNIAiBJOsrv_pqWMq6armWHoZFUGHMXy6Q-PqBoC8_wQAvD_BwE">
+                    <img src="https://i.imgur.com/HUDPOFm.png" alt="" srcset = "">
+                </a>
+                
+            </div>
+            <div class="card">
+                <a href="https://www.paramountplus.com/br/?ftag=IPP-02-10aab2c&gclid=CjwKCAjwov6hBhBsEiwAvrvN6NwE9rSIZUp6L2T1HNIAiBJOsrv_pqWMq6armWHoZFUGHMXy6Q-PqBoC8_wQAvD_BwE">
+                    <img src="https://i.imgur.com/ipGkRDb.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <small>
+            Matheus Ribeiro dos Santos 29682860 |
+            Samuel Marques de Oliveira 30074819
+         </small>
+    </footer>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(25, 25, 25);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .flexCard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .card:hover{
+            transition: all 1s;
+            transition-delay: 0s;
+            box-shadow: 0px 1px 10px rgba(255, 0, 0, 0.3);
+            background-color: rgb(80, 30, 30);
+        }
+
+        .card {
+            flex-basis: 250px;
+            margin: 10px;
+            background-color: rgb(34, 34, 34);
+            border-radius: 10px;
+            box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.3);
+            height: 45vh;
+            transition: .9s all;   
+            transition-delay: 2s;
+        }
+
+        img{
+            margin: 0 auto;
+            width: 80%;
+            height: auto;
+            align-self: center;
+        }
+
+        a{
+            padding: 5%;
+            display: flex;
+            height: 100%;
+        }
+
+        #titulo{
+            display: flex;
+        }
+
+        h1{
+            margin: 2% auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+            font-style: italic;
+            font-size: 2rem;
+        }
+
+        footer{
+            position: fixed;
+            bottom: 0;
+            height: 30px;
+            background-color: black;
+            width: 100%;
+        }
+
+        small{
+            margin: 0 auto;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        @media only screen and (max-width: 1280px) {
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80vh;
+            }
+            
+            .flexCard {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .card:hover{
+                transition: ease-in-out 1s;
+                box-shadow: 0px 1px 10px rgba(255, 0, 0, 0.3);
+                background-color: rgb(80, 30, 30);
+            }
+            
+            .card {
+                flex-basis: 150px;
+                margin: 10px;
+                background-color: rgb(34, 34, 34);
+                border-radius: 10px;
+                box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.3);
+                height: 45vh;
+            }
+            
+            img{
+                width: 100%;
+                height: auto;
+                align-self: center;
+            }
+        }
+    </style>
+</body>
+</html>
