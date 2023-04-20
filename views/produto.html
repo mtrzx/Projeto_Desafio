@@ -4,9 +4,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Produtos</title>
+    <style>
+        body{
+            display: flex;
+            background-color: #191919;
+        }
+        .container {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .flexCard {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .card:hover{
+            transition: all 1s;
+            transition-delay: 0s;
+            box-shadow: 0px 1px 10px rgba(255, 0, 0, 0.3);
+            background-color: rgb(80, 30, 30);
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 20vh 100px;
+            margin: 10px;
+            background-color: rgb(34, 34, 34);
+            border-radius: 10px;
+            box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            height: 12vh;
+            transition: .9s all;   
+            transition-delay: 2s;
+        }
+
+        img{
+            margin: 0 auto;
+            width: 35%;
+            height: auto;
+            align-self: center;
+        }
+
+        a{            
+            padding: 5%;
+            display: flex;
+            height: 100%;
+        }
+
+        .formulario{
+            width: 75%;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form{
+            margin: 6% auto;
+            width: 90%;
+            background-color: #222222;
+            padding: 1%;
+            border-radius: 30px;
+        }
+
+        h1{
+            margin: 1% auto 10% auto;
+            font-style: italic;
+            text-align: center;
+        }
+
+        p{
+            width: 60%;
+            margin: 0% 0% 5% 1%;
+        }
+
+        #off{
+            width: 10%;
+            border-radius: 100px;
+            position: absolute;
+            left: 55%;
+            top: 30%;
+        }
+
+        .inputBox{
+            margin-bottom: 5%;
+        }
+
+        .inputBox span{
+            margin: 0% 0% 0% 1%;
+        }
+
+        .inputBox input{
+            margin: 0% 1% 0% 1%;
+        }
+
+        #email{
+            width: 20%;
+            background-color: #acacac;
+            padding: 0.5% 0.2% 0.5% 0.2%;
+            border-radius: 10px;
+        }
+
+        #submit:hover{
+            transition: all 1s;
+            background-color: rgb(255, 100, 100);
+        }
+
+        #submit{
+            background-color: red;
+            font-weight: bold;
+            border: none;
+            padding:  0.5% 0.5% 0.5% 0.5%;
+            border-radius: 10px;
+            transition: .9s all;   
+            transition-delay: 1s;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Produtos</h1>
+
+    <div class="formulario">
+        <form id="form" action="">
+            <h1>Pacote combo serviço de Streaming</h1>
+
+            <p>Com esse pacote, você pode ter acesso ao melhor do streaming, incluindo filmes, séries e programas de TV, por um preço muito mais acessível do que assinar todos os serviços separadamente. Com uma economia de cerca de <strong>35%</strong>, você pode aproveitar todas as opções disponíveis em um único pacote, economizando dinheiro e tempo ao não precisar gerenciar múltiplas assinaturas de streaming. É uma ótima opção para quem busca variedade e economia na hora de escolher sua plataforma de streaming favorita. <br>Apenas <strong>R$ 46,34 por mês!</strong></p>
+
+            <div id="areaCadastro">
+                <p>Registre seu e-mail para mais informações</p>
+                <div class="inputBox" id="inputEmail">
+                    <span>Email</span>
+                    <input id="email" type="email">
+                    <input id="submit" type="submit" value="Enviar">
+                </div>
+                
+            </div>
+            </div>
+            <img id="off" src="https://i.imgur.com/YAlpmHa.png" alt="">
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="flexCard">
+            <div class="card">
+                <a href="https://www.apple.com/br/apple-tv-plus/">
+                    <img src="https://i.imgur.com/yu8sUMW.png" alt="" srcset="">
+                </a>
+                
+            </div>
+            <div class="card">
+                <a href="https://www.disneyplus.com/pt-br?cid=DSS-Search-Google-71700000075038504-&s_kwcid=AL!8468!3!652581967632!e!!g!!disneyplus&gad=1&gclid=CjwKCAjwov6hBhBsEiwAvrvN6JrDEBRtrjTFxy442mEmQZdIZZjNbXTJa_NjBSRmBZDJSsP885MYgBoCoAEQAvD_BwE&gclsrc=aw.ds">
+                    <img src="https://i.imgur.com/nxX91Md.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.hbomax.com/br/pt">
+                    <img src="https://i.imgur.com/b2dklfb.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.netflix.com/br/">
+                    <img src="https://i.imgur.com/reb3EnU.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.paramountplus.com/br/?ftag=IPP-02-10aab2c&gclid=CjwKCAjwov6hBhBsEiwAvrvN6NwE9rSIZUp6L2T1HNIAiBJOsrv_pqWMq6armWHoZFUGHMXy6Q-PqBoC8_wQAvD_BwE">
+                    <img src="https://i.imgur.com/HUDPOFm.png" alt="" srcset = "">
+                </a>
+                
+            </div>
+            <div class="card">
+                <a href="https://www.paramountplus.com/br/?ftag=IPP-02-10aab2c&gclid=CjwKCAjwov6hBhBsEiwAvrvN6NwE9rSIZUp6L2T1HNIAiBJOsrv_pqWMq6armWHoZFUGHMXy6Q-PqBoC8_wQAvD_BwE">
+                    <img src="https://i.imgur.com/ipGkRDb.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
